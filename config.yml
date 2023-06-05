@@ -1,0 +1,9 @@
+font-family:
+  - primary: "Canela"
+  - secondary: "Inter"
+
+font-size:
+  - 14,16,20,24,48,64
+
+font-weight:
+  - 400,500,600,700

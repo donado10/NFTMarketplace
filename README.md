@@ -1,1 +1,3 @@
 # NFTMarketplace
+
+![Cat](Design.jpg)
