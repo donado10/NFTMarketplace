@@ -3,7 +3,15 @@ font-family:
   - secondary: "Inter"
 
 font-size:
-  - 14,16,20,24,48,64
+  - semi-regular: 14 #0.875rem
+  - regular: 16 #1rem
+  - semi-large: 20 #1.25rem
+  - large: 24 #1.5rem
+  - enormous: 48 #3rem
+  - giant: 64 #4rem
 
 font-weight:
-  - 400,500,600,700
+  - semi-regular: 300
+  - regular: 400
+  - semi-bold: 600
+  - bold: 700

@@ -1,0 +1,19 @@
+// ---- BASE ----
+@import "bases/reset";
+@import "bases/global";
+
+// ---- UTILITIES ----
+@import "utilities/variables";
+@import "utilities/mixins";
+
+// ---- COMPONENTS ----
+@import "components/buttons";
+
+// ---- LAYOUTS ----
+@import "layouts/header";
+@import "layouts/hero";
+@import "layouts/market";
+@import "layouts/sell";
+@import "layouts/artists";
+@import "layouts/suscribe";
+@import "layouts/footer";
