@@ -1,9 +1,10 @@
 body {
   @include flexcentered();
   flex-direction: column;
-  background-color: black;
   color: $color2;
   font-family: $ff-secondary;
+  position: relative;
+  background: transparent;
 }
 
 .container {
@@ -22,5 +23,23 @@ body {
 
   span {
     color: $txt-highlightColor;
+  }
+}
+.page-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -5;
+
+  background: hsl(222, 53%, 7%);
+  .content {
+    background-image: url("../../img/Global/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: color-burn;
+    width: 100%;
+    height: 100%;
   }
 }

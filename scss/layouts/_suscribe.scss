@@ -1,0 +1,63 @@
+.suscribe {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, auto);
+  row-gap: 2rem;
+
+  &-images {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    position: relative;
+    width: 80%;
+    height: 28rem;
+    align-self: center;
+
+    .image {
+      position: absolute;
+    }
+    .image_1 {
+      width: 70%;
+      top: 0;
+      left: 0;
+      transform: rotate(-10deg);
+      img {
+        width: 100%;
+        aspect-ratio: 1.09/1;
+      }
+    }
+
+    .image_2 {
+      width: 50%;
+      right: 0;
+      bottom: 0;
+      img {
+        width: 100%;
+        aspect-ratio: 1/1.23;
+      }
+    }
+  }
+  &-title {
+    grid-row: 2/3;
+  }
+
+  &-description {
+    grid-row: 3/4;
+  }
+
+  &-field {
+    grid-row: 4/5;
+    display: flex;
+    justify-content: space-between;
+    background: $color5;
+    width: 25rem;
+    border-radius: $border-radius1;
+    & > * {
+      margin: 0.5rem;
+    }
+  }
+
+  &-btn {
+    width: 7rem;
+    height: 2.5rem;
+  }
+}
