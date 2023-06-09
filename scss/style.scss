@@ -1,10 +1,10 @@
-// ---- BASE ----
-@import "bases/reset";
-@import "bases/global";
-
 // ---- UTILITIES ----
 @import "utilities/variables";
 @import "utilities/mixins";
+
+// ---- BASE ----
+@import "bases/reset";
+@import "bases/global";
 
 // ---- COMPONENTS ----
 @import "components/buttons";

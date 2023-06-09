@@ -1,0 +1,130 @@
+.hero {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, auto);
+  row-gap: 3rem;
+  &-title {
+    grid-column: 1;
+    grid-row: 1/2;
+
+    @include set-font($fs-giant, $fw-bold);
+    font-family: $ff-primary;
+    color: $txt-defaultColor;
+
+    span {
+      color: $txt-highlightColor;
+    }
+  }
+
+  &-description {
+    grid-column: 1;
+    grid-row: 2/3;
+
+    @include set-font($fs-regular, $fw-semi-regular);
+    font-family: $ff-secondary;
+    color: $txt-defaultColor;
+  }
+
+  &-links {
+    grid-column: 1;
+    grid-row: 3/4;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    button {
+      width: 10rem;
+      height: 2.5rem;
+    }
+
+    a {
+      color: $txt-defaultColor;
+      font-weight: $fw-bold;
+    }
+  }
+
+  &-stats {
+    grid-column: 1;
+    grid-row: 4/5;
+
+    display: flex;
+    gap: 3rem;
+    .stat {
+      padding: 0rem 1.2rem;
+      h1 {
+        @include set-font($fs-enormous, $fw-bold);
+        font-family: $ff-primary;
+        span {
+          color: $txt-highlightColor;
+        }
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        @include set-font($fs-regular, $fw-semi-regular);
+      }
+    }
+
+    .stat:nth-child(1),
+    .stat:nth-child(2) {
+      border-right: 1px solid $color1;
+    }
+  }
+
+  &-image {
+    grid-column: 2;
+    grid-row: 1/-1;
+    justify-self: end;
+    margin-right: 3rem;
+    width: 29rem;
+    height: 34rem;
+    position: relative;
+    img {
+      width: 100%;
+      aspect-ratio: 1/1.17;
+    }
+    .round {
+      position: absolute;
+      width: 10rem;
+      aspect-ratio: 1/1;
+      top: 40%;
+      left: -12%;
+    }
+    .hero-bid {
+      display: grid;
+      width: 19rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
+      row-gap: 1rem;
+      background: $btn-bid-bgColor;
+      padding: 1rem;
+      border-radius: $border-radius2;
+      border-top: 1px solid $color1;
+      bottom: -13%;
+      right: -10%;
+      position: absolute;
+      .place-bid {
+        grid-row: 2;
+        grid-column: 1/-1;
+        width: 90%;
+        height: 3.25rem;
+        justify-self: center;
+      }
+
+      .time-left {
+        justify-self: start;
+        h1 {
+          color: $txt-highlightColor;
+          margin-bottom: 0.5rem;
+        }
+      }
+      .current-bid {
+        justify-self: end;
+        h1 {
+          color: $txt-highlightColor;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}

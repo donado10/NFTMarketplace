@@ -9,15 +9,15 @@ html {
   font-size: 100%;
 }
 
-body {
-  /* @include flexcentered; */
-  flex-direction: column;
-}
-
 li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+button {
+  border: none;
+  background: transparent;
 }

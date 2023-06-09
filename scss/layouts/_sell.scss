@@ -1,0 +1,72 @@
+.sell {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(10, auto);
+  column-gap: 3rem;
+  row-gap: 2rem;
+  margin-top: 3rem;
+
+  &-images {
+    grid-column: 2;
+    grid-row: 1/-1;
+    width: 85%;
+    height: 35rem;
+    position: relative;
+    justify-self: end;
+    .image {
+      position: absolute;
+    }
+    .image_1 {
+      width: 55%;
+      left: 0;
+      bottom: 0;
+      img {
+        width: 100%;
+        aspect-ratio: 1.02/1;
+      }
+
+      z-index: 1;
+    }
+    .image_2 {
+      width: 50%;
+      top: 0;
+      right: 0;
+      img {
+        width: 100%;
+        aspect-ratio: 1/1.15;
+      }
+      z-index: -1;
+    }
+  }
+
+  &-title {
+    grid-column: 1;
+    grid-row: 4/6;
+  }
+
+  &-description {
+    grid-column: 1;
+    grid-row: 6/7;
+
+    @include set-font($fs-regular, $fw-semi-regular);
+    font-family: $ff-secondary;
+    color: $txt-defaultColor;
+  }
+
+  &-links {
+    grid-column: 1;
+    grid-row: 7/8;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    button {
+      width: 10rem;
+      height: 2.5rem;
+    }
+
+    a {
+      color: $txt-defaultColor;
+      font-weight: $fw-bold;
+    }
+  }
+}

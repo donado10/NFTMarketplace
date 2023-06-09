@@ -1,0 +1,30 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+
+  nav {
+    grid-column: 1/6;
+    align-self: center;
+  }
+
+  &-links {
+    display: flex;
+    gap: 4rem;
+
+    .link > * {
+      @include set-font($fs-regular, $fw-semi-regular);
+      color: $txt-fourthColor;
+    }
+
+    .link:hover > * {
+      color: $txt-defaultColor;
+    }
+  }
+
+  &-btn {
+    justify-self: end;
+    grid-column: -1;
+    width: 8rem;
+    height: 2.5rem;
+  }
+}

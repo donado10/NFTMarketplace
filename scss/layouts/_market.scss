@@ -1,0 +1,83 @@
+.market {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  row-gap: 3rem;
+  &-title {
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  &-btn {
+    grid-column: 2/3;
+    justify-self: end;
+    align-self: end;
+    width: 8rem;
+    height: 2.5rem;
+  }
+
+  &-cards {
+    grid-column: 1/-1;
+    grid-row: 2;
+    display: flex;
+    justify-content: space-between;
+    .card {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(3, auto);
+      width: 25rem;
+      height: 31rem;
+      background: $color5;
+      border-radius: $border-radius3;
+      border-top: 1px solid $color1;
+
+      &-image {
+        grid-column: 1/-1;
+        grid-row: 1;
+        justify-self: center;
+        width: 90%;
+        align-self: center;
+        margin-top: 0.5rem;
+        img {
+          width: 100%;
+          aspect-ratio: 1.07/1;
+        }
+      }
+
+      .nft-name {
+        @include set-font($fs-semi-large, $fw-bold);
+        margin-left: 20px;
+        align-self: center;
+      }
+
+      .nft-price {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        justify-self: end;
+        margin-right: 20px;
+      }
+
+      .time-left {
+        label {
+          @include set-font($fs-semi-regular, $fw-semi-regular);
+          color: $color4;
+        }
+        .timer {
+          margin-top: 0.5rem;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+        margin-left: 20px;
+        align-self: center;
+      }
+
+      .place-bid {
+        width: 10rem;
+        height: 2.5rem;
+        align-self: center;
+      }
+    }
+  }
+}

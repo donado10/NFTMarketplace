@@ -1,0 +1,46 @@
+@mixin flexcentered() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin set-font($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}
+
+// ==========================================================================
+// =========          Media Queries         ==========
+// ==========================================================================
+
+@mixin response($breakpoint) {
+  @if ($breakpoint == xxl) {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == xl) {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == lg) {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == md) {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == sm) {
+    @media (max-width: 320px) {
+      @content;
+    }
+  }
+}

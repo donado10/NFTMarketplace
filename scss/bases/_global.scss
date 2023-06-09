@@ -1,0 +1,26 @@
+body {
+  @include flexcentered();
+  flex-direction: column;
+  background-color: black;
+  color: $color2;
+  font-family: $ff-secondary;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  width: 90vw;
+  margin-top: $spacing-margin;
+}
+
+.section-title {
+  font-size: $fs-enormous;
+  font-weight: $fw-bold;
+  color: $txt-defaultColor;
+  font-family: $ff-primary;
+
+  span {
+    color: $txt-highlightColor;
+  }
+}
