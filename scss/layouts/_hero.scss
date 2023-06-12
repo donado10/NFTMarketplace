@@ -4,6 +4,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, auto);
   row-gap: 3rem;
+
   &-title {
     grid-column: 1;
     grid-row: 1/2;
@@ -15,6 +16,11 @@
     span {
       color: $txt-highlightColor;
     }
+
+    @include response(xxl) {
+      $fs-giant: text-resize-giant-based(3.375rem);
+      @include set-font($fs-giant, $fw-bold);
+    }
   }
 
   &-description {
@@ -24,6 +30,11 @@
     @include set-font($fs-regular, $fw-semi-regular);
     font-family: $ff-secondary;
     color: $txt-defaultColor;
+
+    @include response(xxl) {
+      $fs-regular: text-resize-giant-based(3.375rem, _regular);
+      @include set-font($fs-regular, $fw-semi-regular);
+    }
   }
 
   &-links {
@@ -35,11 +46,21 @@
     button {
       width: 10rem;
       height: 2.5rem;
+
+      @include response(xxl) {
+        $fs-regular: text-resize-giant-based(3.375rem, _regular);
+        @include set-font($fs-regular, $fw-bold);
+      }
     }
 
     a {
       color: $txt-defaultColor;
       font-weight: $fw-bold;
+
+      @include response(xxl) {
+        $fs-regular: text-resize-giant-based(3.375rem, _regular);
+        @include set-font($fs-regular, $fw-bold);
+      }
     }
   }
 
@@ -58,10 +79,20 @@
           color: $txt-highlightColor;
         }
         margin-bottom: 1rem;
+
+        @include response(xxl) {
+          $fs-enormous: text-resize-giant-based(3.375rem, _enormous);
+          @include set-font($fs-enormous, $fw-bold);
+        }
       }
 
       h2 {
         @include set-font($fs-regular, $fw-semi-regular);
+
+        @include response(xxl) {
+          $fs-regular: text-resize-giant-based(3.375rem, _regular);
+          @include set-font($fs-regular, $fw-semi-regular);
+        }
       }
     }
 
@@ -76,8 +107,8 @@
     grid-row: 1/-1;
     justify-self: end;
     margin-right: 3rem;
-    width: 29rem;
-    height: 34rem;
+    width: 80%;
+    height: min-content;
     position: relative;
     img {
       width: 100%;

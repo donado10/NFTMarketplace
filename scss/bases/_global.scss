@@ -24,6 +24,11 @@ body {
   span {
     color: $txt-highlightColor;
   }
+
+  @include response(xxl) {
+    $fs-enormous: text-resize-giant-based(3.375rem, _enormous);
+    @include set-font($fs-enormous, $fw-bold);
+  }
 }
 .page-background {
   position: absolute;

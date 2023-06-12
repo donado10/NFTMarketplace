@@ -3,6 +3,7 @@
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   gap: 2rem;
+  width: 100%;
   &-title {
     grid-column: 1/2;
     grid-row: 1;
@@ -21,9 +22,11 @@
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: repeat(24, 1fr);
-    grid-auto-rows: 19rem;
-    gap: 2rem;
-    width: 90vw;
+    grid-auto-rows: auto;
+    gap: 0.5rem;
+    width: 100%;
+    aspect-ratio: 2.1/1;
+    border: 1px solid red;
 
     .artist {
       height: 100%;
@@ -120,11 +123,21 @@
         margin-bottom: 0.5rem;
         @include set-font($fs-semi-regular, $fw-semi-regular);
         font-family: $ff-secondary;
+
+        @include response(xxl) {
+          $fs-regular: text-resize-giant-based(3.375rem, _regular);
+          @include set-font($fs-semi-regular, $fw-semi-regular);
+        }
       }
 
       h2 {
         @include set-font($fs-regular, $fw-regular);
         font-family: $ff-secondary;
+
+        @include response(xxl) {
+          $fs-regular: text-resize-giant-based(3.375rem, _regular);
+          @include set-font($fs-regular, $fw-regular);
+        }
       }
     }
   }

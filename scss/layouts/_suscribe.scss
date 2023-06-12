@@ -3,13 +3,13 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, auto);
   row-gap: 2rem;
-
+  width: 100%;
   &-images {
     grid-column: 1/2;
     grid-row: 1/-1;
     position: relative;
     width: 80%;
-    height: 28rem;
+    aspect-ratio: 1.2/1;
     align-self: center;
 
     .image {

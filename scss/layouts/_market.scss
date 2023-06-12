@@ -49,6 +49,11 @@
         @include set-font($fs-semi-large, $fw-bold);
         margin-left: 20px;
         align-self: center;
+
+        @include response(xxl) {
+          $fs-regular: text-resize-giant-based(3.375rem, _regular);
+          @include set-font($fs-semi-large, $fw-bold);
+        }
       }
 
       .nft-price {
@@ -63,6 +68,11 @@
         label {
           @include set-font($fs-semi-regular, $fw-semi-regular);
           color: $color4;
+
+          @include response(xxl) {
+            $fs-regular: text-resize-giant-based(3.375rem, _regular);
+            @include set-font($fs-semi-regular, $fw-semi-regular);
+          }
         }
         .timer {
           margin-top: 0.5rem;

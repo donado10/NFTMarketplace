@@ -57,6 +57,12 @@ body {
 .section-title span {
   color: hsl(67, 89%, 50%);
 }
+@media (max-width: 1200px) {
+  .section-title {
+    font-size: 2.5961538462rem;
+    font-weight: 700;
+  }
+}
 
 .page-background {
   position: absolute;
@@ -135,6 +141,12 @@ body {
 .hero-title span {
   color: hsl(67, 89%, 50%);
 }
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 3.375rem;
+    font-weight: 700;
+  }
+}
 .hero-description {
   grid-column: 1;
   grid-row: 2/3;
@@ -142,6 +154,12 @@ body {
   font-weight: 300;
   font-family: "Inter", sans-serif;
   color: hsl(74, 100%, 100%);
+}
+@media (max-width: 1200px) {
+  .hero-description {
+    font-size: 0.84375rem;
+    font-weight: 300;
+  }
 }
 .hero-links {
   grid-column: 1;
@@ -154,9 +172,21 @@ body {
   width: 10rem;
   height: 2.5rem;
 }
+@media (max-width: 1200px) {
+  .hero-links button {
+    font-size: 0.84375rem;
+    font-weight: 700;
+  }
+}
 .hero-links a {
   color: hsl(74, 100%, 100%);
   font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .hero-links a {
+    font-size: 0.84375rem;
+    font-weight: 700;
+  }
 }
 .hero-stats {
   grid-column: 1;
@@ -176,9 +206,21 @@ body {
 .hero-stats .stat h1 span {
   color: hsl(67, 89%, 50%);
 }
+@media (max-width: 1200px) {
+  .hero-stats .stat h1 {
+    font-size: 2.5961538462rem;
+    font-weight: 700;
+  }
+}
 .hero-stats .stat h2 {
   font-size: 1rem;
   font-weight: 300;
+}
+@media (max-width: 1200px) {
+  .hero-stats .stat h2 {
+    font-size: 0.84375rem;
+    font-weight: 300;
+  }
 }
 .hero-stats .stat:nth-child(1),
 .hero-stats .stat:nth-child(2) {
@@ -189,8 +231,8 @@ body {
   grid-row: 1/-1;
   justify-self: end;
   margin-right: 3rem;
-  width: 29rem;
-  height: 34rem;
+  width: 80%;
+  height: min-content;
   position: relative;
 }
 .hero-image img {
@@ -292,6 +334,12 @@ body {
   margin-left: 20px;
   align-self: center;
 }
+@media (max-width: 1200px) {
+  .market-cards .card .nft-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+}
 .market-cards .card .nft-price {
   display: flex;
   gap: 0.5rem;
@@ -307,6 +355,12 @@ body {
   font-size: 0.875rem;
   font-weight: 300;
   color: hsla(74, 0%, 100%, 0.72);
+}
+@media (max-width: 1200px) {
+  .market-cards .card .time-left label {
+    font-size: 0.875rem;
+    font-weight: 300;
+  }
 }
 .market-cards .card .time-left .timer {
   margin-top: 0.5rem;
@@ -324,15 +378,17 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(10, auto);
+  width: 100%;
   column-gap: 3rem;
   row-gap: 2rem;
   margin-top: 3rem;
 }
 .sell-images {
+  border: 1px solid red;
   grid-column: 2;
   grid-row: 1/-1;
   width: 85%;
-  height: 35rem;
+  aspect-ratio: 1.3/1;
   position: relative;
   justify-self: end;
 }
@@ -371,6 +427,12 @@ body {
   font-family: "Inter", sans-serif;
   color: hsl(74, 100%, 100%);
 }
+@media (max-width: 1200px) {
+  .sell-description {
+    font-size: 0.84375rem;
+    font-weight: 300;
+  }
+}
 .sell-links {
   grid-column: 1;
   grid-row: 7/8;
@@ -382,9 +444,21 @@ body {
   width: 10rem;
   height: 2.5rem;
 }
+@media (max-width: 1200px) {
+  .sell-links button {
+    font-size: 0.84375rem;
+    font-weight: 700;
+  }
+}
 .sell-links a {
   color: hsl(74, 100%, 100%);
   font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .sell-links a {
+    font-size: 0.84375rem;
+    font-weight: 700;
+  }
 }
 
 .artists {
@@ -392,6 +466,7 @@ body {
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   gap: 2rem;
+  width: 100%;
 }
 .artists-title {
   grid-column: 1/2;
@@ -409,9 +484,11 @@ body {
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: repeat(24, 1fr);
-  grid-auto-rows: 19rem;
-  gap: 2rem;
-  width: 90vw;
+  grid-auto-rows: auto;
+  gap: 0.5rem;
+  width: 100%;
+  aspect-ratio: 2.1/1;
+  border: 1px solid red;
 }
 .artists .artists-info .artist {
   height: 100%;
@@ -499,10 +576,22 @@ body {
   font-weight: 300;
   font-family: "Inter", sans-serif;
 }
+@media (max-width: 1200px) {
+  .artists .artists-info .artist-profile h1 {
+    font-size: 0.875rem;
+    font-weight: 300;
+  }
+}
 .artists .artists-info .artist-profile h2 {
   font-size: 1rem;
   font-weight: 400;
   font-family: "Inter", sans-serif;
+}
+@media (max-width: 1200px) {
+  .artists .artists-info .artist-profile h2 {
+    font-size: 0.84375rem;
+    font-weight: 400;
+  }
 }
 
 .suscribe {
@@ -510,13 +599,14 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, auto);
   row-gap: 2rem;
+  width: 100%;
 }
 .suscribe-images {
   grid-column: 1/2;
   grid-row: 1/-1;
   position: relative;
   width: 80%;
-  height: 28rem;
+  aspect-ratio: 1.2/1;
   align-self: center;
 }
 .suscribe-images .image {

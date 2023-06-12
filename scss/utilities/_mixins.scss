@@ -9,6 +9,36 @@
   font-weight: $weight;
 }
 
+@function text-resize-giant-based($giantValue, $fs: _giant) {
+  $fs-giant: $giantValue;
+
+  @if ($fs == _enormous) {
+    $fs-enormous: $fs-giant / 1.3;
+    @return $fs-enormous;
+  }
+  @if ($fs == _large) {
+    $fs-large: $fs-giant / 2.6;
+    @return $fs-large;
+  }
+
+  @if ($fs == s_large) {
+    $fs-semi-large: $fs-giant / 3.2;
+    @return $fs-semi-large;
+  }
+
+  @if ($fs == _regular) {
+    $fs-regular: $fs-giant / 4;
+    @return $fs-regular;
+  }
+
+  @if ($fs == s_regular) {
+    $fs-semi-regular: $fs-giant / 4.6;
+    @return $fs-semi-regular;
+  }
+
+  @return $fs-giant;
+}
+
 // ==========================================================================
 // =========          Media Queries         ==========
 // ==========================================================================
