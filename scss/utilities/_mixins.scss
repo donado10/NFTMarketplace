@@ -39,6 +39,30 @@
   @return $fs-giant;
 }
 
+@mixin center-element() {
+  align-self: center;
+  justify-self: center;
+}
+
+@mixin remove-lineBreak() {
+  br {
+    content: "";
+    display: none;
+  }
+
+  br:after {
+    content: "";
+    display: none;
+  }
+}
+
+@function max($number1, $number2) {
+  @return if($number1 > $number2, $number1, $number2);
+}
+
+@function min($number1, $number2) {
+  @return if($number1 < $number2, $number1, $number2);
+}
 // ==========================================================================
 // =========          Media Queries         ==========
 // ==========================================================================

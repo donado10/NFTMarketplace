@@ -21,6 +21,7 @@
     grid-row: 2;
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
     flex-wrap: wrap;
     .card {
       display: grid;
@@ -46,14 +47,8 @@
       }
 
       .nft-name {
-        @include set-font($fs-semi-large, $fw-bold);
         margin-left: 20px;
         align-self: center;
-
-        @include response(xxl) {
-          $fs-regular: text-resize-giant-based(3.375rem, _regular);
-          @include set-font($fs-semi-large, $fw-bold);
-        }
       }
 
       .nft-price {
@@ -65,15 +60,6 @@
       }
 
       .time-left {
-        label {
-          @include set-font($fs-semi-regular, $fw-semi-regular);
-          color: $color4;
-
-          @include response(xxl) {
-            $fs-regular: text-resize-giant-based(3.375rem, _regular);
-            @include set-font($fs-semi-regular, $fw-semi-regular);
-          }
-        }
         .timer {
           margin-top: 0.5rem;
           display: flex;
@@ -89,6 +75,15 @@
         height: 2.5rem;
         align-self: center;
       }
+    }
+  }
+  @include response(xl) {
+    grid-template-columns: 2fr 1fr;
+
+    &-cards {
+      @include center-element;
+      justify-content: center;
+      align-items: center;
     }
   }
 }

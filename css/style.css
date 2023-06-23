@@ -34,8 +34,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: hsl(74, 100%, 100%);
-  font-family: "Inter", sans-serif;
   position: relative;
   background: transparent;
 }
@@ -46,22 +44,6 @@ body {
   gap: 5rem;
   width: 90vw;
   margin-top: 3rem;
-}
-
-.section-title {
-  font-size: 3rem;
-  font-weight: 700;
-  color: hsl(74, 100%, 100%);
-  font-family: "Canela Text";
-}
-.section-title span {
-  color: hsl(67, 89%, 50%);
-}
-@media (max-width: 1200px) {
-  .section-title {
-    font-size: 2.5961538462rem;
-    font-weight: 700;
-  }
 }
 
 .page-background {
@@ -80,6 +62,271 @@ body {
   mix-blend-mode: color-burn;
   width: 100%;
   height: 100%;
+}
+
+.size-50 {
+  font-size: 0.875rem;
+}
+
+.size-100 {
+  font-size: 1rem;
+}
+
+.size-150 {
+  font-size: 1.25rem;
+}
+
+.size-200 {
+  font-size: 1.5rem;
+}
+
+.size-400 {
+  font-size: 3rem;
+}
+
+.size-500 {
+  font-size: 4rem;
+}
+
+.bold-50 {
+  font-weight: 300;
+}
+
+.bold-100 {
+  font-weight: 400;
+}
+
+.bold-150 {
+  font-weight: 600;
+}
+
+.bold-200 {
+  font-weight: 700;
+}
+
+body {
+  color: hsl(74, 100%, 100%);
+  font-family: "Inter", sans-serif;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(74, 100%, 100%);
+  font-family: "Canela Text";
+}
+.section-title span {
+  color: hsl(67, 89%, 50%);
+}
+@media (max-width: 1200px) {
+  .section-title {
+    font-size: 2.5961538462rem;
+    font-weight: 700;
+  }
+}
+
+.header .link > * {
+  font-size: 1rem;
+  font-weight: 300;
+  color: hsla(74, 0%, 100%, 0.72);
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: "Canela Text";
+  color: hsl(74, 100%, 100%);
+}
+.hero-title span {
+  color: hsl(67, 89%, 50%);
+}
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 3.375rem;
+    font-weight: 700;
+  }
+}
+.hero-description {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+  color: hsl(74, 100%, 100%);
+}
+@media (max-width: 1200px) {
+  .hero-description {
+    font-size: 0.84375rem;
+    font-weight: 300;
+  }
+}
+@media (max-width: 1200px) {
+  .hero-links button {
+    font-size: 0.84375rem;
+    font-weight: 700;
+  }
+}
+.hero-links a {
+  color: hsl(74, 100%, 100%);
+  font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .hero-links a {
+    font-size: 0.84375rem;
+    font-weight: 700;
+  }
+}
+.hero-stats .stat h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Canela Text";
+}
+.hero-stats .stat h1 span {
+  color: hsl(67, 89%, 50%);
+}
+@media (max-width: 1200px) {
+  .hero-stats .stat h1 {
+    font-size: 2.5961538462rem;
+    font-weight: 700;
+  }
+}
+.hero-stats .stat h2 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+@media (max-width: 1200px) {
+  .hero-stats .stat h2 {
+    font-size: 0.84375rem;
+    font-weight: 300;
+  }
+}
+.hero-image .hero-bid .time-left h1 {
+  color: hsl(67, 89%, 50%);
+}
+.hero-image .hero-bid .current-bid h1 {
+  color: hsl(67, 89%, 50%);
+}
+
+.market .card .nft-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .market .card .nft-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+}
+.market .card .time-left label {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: hsla(74, 0%, 100%, 0.72);
+}
+@media (max-width: 1200px) {
+  .market .card .time-left label {
+    font-size: 0.875rem;
+    font-weight: 300;
+  }
+}
+
+.sell-description {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+  color: hsl(74, 100%, 100%);
+}
+@media (max-width: 1200px) {
+  .sell-description {
+    font-size: 0.84375rem;
+    font-weight: 300;
+  }
+}
+@media (max-width: 1200px) {
+  .sell-links button {
+    font-size: 0.84375rem;
+    font-weight: 700;
+  }
+}
+.sell-links a {
+  color: hsl(74, 100%, 100%);
+  font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .sell-links a {
+    font-size: 0.84375rem;
+    font-weight: 700;
+  }
+}
+
+.artists .artist-profile h1 {
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+}
+@media (max-width: 1200px) {
+  .artists .artist-profile h1 {
+    font-size: 0.875rem;
+    font-weight: 300;
+  }
+}
+.artists .artist-profile h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+@media (max-width: 1200px) {
+  .artists .artist-profile h2 {
+    font-size: 0.84375rem;
+    font-weight: 400;
+  }
+}
+
+.suscribe-description {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+  color: hsl(74, 100%, 100%);
+}
+@media (max-width: 1200px) {
+  .suscribe-description {
+    font-size: 0.84375rem;
+    font-weight: 300;
+  }
+}
+
+.footer .social p {
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+@media (max-width: 1200px) {
+  .footer .social p {
+    font-size: 0.7336956522rem;
+    font-weight: 300;
+  }
+}
+.footer-links .footer-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .footer-links .footer-title {
+    font-size: 0.84375rem;
+    font-weight: 300;
+  }
+}
+.footer-links .links {
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+@media (max-width: 1200px) {
+  .footer-links .links {
+    font-size: 0.7336956522rem;
+    font-weight: 300;
+  }
+}
+@media (max-width: 1200px) {
+  .footer .regulations {
+    font-size: 0.7336956522rem;
+    font-weight: 300;
+  }
 }
 
 .primary-btn {
@@ -108,11 +355,6 @@ body {
   display: flex;
   gap: 4rem;
 }
-.header-links .link > * {
-  font-size: 1rem;
-  font-weight: 300;
-  color: hsla(74, 0%, 100%, 0.72);
-}
 .header-links .link:hover > * {
   color: hsl(74, 100%, 100%);
 }
@@ -133,33 +375,10 @@ body {
 .hero-title {
   grid-column: 1;
   grid-row: 1/2;
-  font-size: 4rem;
-  font-weight: 700;
-  font-family: "Canela Text";
-  color: hsl(74, 100%, 100%);
-}
-.hero-title span {
-  color: hsl(67, 89%, 50%);
-}
-@media (max-width: 1200px) {
-  .hero-title {
-    font-size: 3.375rem;
-    font-weight: 700;
-  }
 }
 .hero-description {
   grid-column: 1;
   grid-row: 2/3;
-  font-size: 1rem;
-  font-weight: 300;
-  font-family: "Inter", sans-serif;
-  color: hsl(74, 100%, 100%);
-}
-@media (max-width: 1200px) {
-  .hero-description {
-    font-size: 0.84375rem;
-    font-weight: 300;
-  }
 }
 .hero-links {
   grid-column: 1;
@@ -172,22 +391,6 @@ body {
   width: 10rem;
   height: 2.5rem;
 }
-@media (max-width: 1200px) {
-  .hero-links button {
-    font-size: 0.84375rem;
-    font-weight: 700;
-  }
-}
-.hero-links a {
-  color: hsl(74, 100%, 100%);
-  font-weight: 700;
-}
-@media (max-width: 1200px) {
-  .hero-links a {
-    font-size: 0.84375rem;
-    font-weight: 700;
-  }
-}
 .hero-stats {
   grid-column: 1;
   grid-row: 4/5;
@@ -198,29 +401,7 @@ body {
   padding: 0rem 1.2rem;
 }
 .hero-stats .stat h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  font-family: "Canela Text";
   margin-bottom: 1rem;
-}
-.hero-stats .stat h1 span {
-  color: hsl(67, 89%, 50%);
-}
-@media (max-width: 1200px) {
-  .hero-stats .stat h1 {
-    font-size: 2.5961538462rem;
-    font-weight: 700;
-  }
-}
-.hero-stats .stat h2 {
-  font-size: 1rem;
-  font-weight: 300;
-}
-@media (max-width: 1200px) {
-  .hero-stats .stat h2 {
-    font-size: 0.84375rem;
-    font-weight: 300;
-  }
 }
 .hero-stats .stat:nth-child(1),
 .hero-stats .stat:nth-child(2) {
@@ -231,7 +412,7 @@ body {
   grid-row: 1/-1;
   justify-self: end;
   margin-right: 3rem;
-  width: 80%;
+  width: max(80%, 23rem);
   height: min-content;
   position: relative;
 }
@@ -281,6 +462,62 @@ body {
   color: hsl(67, 89%, 50%);
   margin-bottom: 0.5rem;
 }
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-title {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+  }
+  .hero-title br {
+    content: "";
+    display: none;
+  }
+  .hero-title br:after {
+    content: "";
+    display: none;
+  }
+  .hero-description {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    width: 80%;
+  }
+  .hero-description br {
+    content: "";
+    display: none;
+  }
+  .hero-description br:after {
+    content: "";
+    display: none;
+  }
+  .hero-image {
+    grid-column: 1;
+    grid-row: 3/4;
+    width: 23rem;
+    align-self: center;
+    justify-self: center;
+    margin-right: 0;
+  }
+  .hero-image .hero-bid {
+    bottom: -5%;
+    right: -30%;
+  }
+  .hero-links {
+    grid-row: 4/5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+  .hero-stats {
+    grid-row: 5/6;
+    align-self: center;
+    justify-self: center;
+  }
+}
 
 .market {
   display: grid;
@@ -304,6 +541,7 @@ body {
   grid-row: 2;
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 .market-cards .card {
@@ -329,16 +567,8 @@ body {
   aspect-ratio: 1.07/1;
 }
 .market-cards .card .nft-name {
-  font-size: 1.25rem;
-  font-weight: 700;
   margin-left: 20px;
   align-self: center;
-}
-@media (max-width: 1200px) {
-  .market-cards .card .nft-name {
-    font-size: 1.25rem;
-    font-weight: 700;
-  }
 }
 .market-cards .card .nft-price {
   display: flex;
@@ -351,17 +581,6 @@ body {
   margin-left: 20px;
   align-self: center;
 }
-.market-cards .card .time-left label {
-  font-size: 0.875rem;
-  font-weight: 300;
-  color: hsla(74, 0%, 100%, 0.72);
-}
-@media (max-width: 1200px) {
-  .market-cards .card .time-left label {
-    font-size: 0.875rem;
-    font-weight: 300;
-  }
-}
 .market-cards .card .time-left .timer {
   margin-top: 0.5rem;
   display: flex;
@@ -372,6 +591,17 @@ body {
   width: 10rem;
   height: 2.5rem;
   align-self: center;
+}
+@media (max-width: 1024px) {
+  .market {
+    grid-template-columns: 2fr 1fr;
+  }
+  .market-cards {
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .sell {
@@ -384,7 +614,6 @@ body {
   margin-top: 3rem;
 }
 .sell-images {
-  border: 1px solid red;
   grid-column: 2;
   grid-row: 1/-1;
   width: 85%;
@@ -422,16 +651,6 @@ body {
 .sell-description {
   grid-column: 1;
   grid-row: 6/7;
-  font-size: 1rem;
-  font-weight: 300;
-  font-family: "Inter", sans-serif;
-  color: hsl(74, 100%, 100%);
-}
-@media (max-width: 1200px) {
-  .sell-description {
-    font-size: 0.84375rem;
-    font-weight: 300;
-  }
 }
 .sell-links {
   grid-column: 1;
@@ -444,20 +663,43 @@ body {
   width: 10rem;
   height: 2.5rem;
 }
-@media (max-width: 1200px) {
-  .sell-links button {
-    font-size: 0.84375rem;
-    font-weight: 700;
+@media (max-width: 1024px) {
+  .sell {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
   }
-}
-.sell-links a {
-  color: hsl(74, 100%, 100%);
-  font-weight: 700;
-}
-@media (max-width: 1200px) {
-  .sell-links a {
-    font-size: 0.84375rem;
-    font-weight: 700;
+  .sell-title {
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+  }
+  .sell-title br {
+    content: "";
+    display: none;
+  }
+  .sell-title br:after {
+    content: "";
+    display: none;
+  }
+  .sell-description {
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    width: 80%;
+  }
+  .sell-images {
+    align-self: center;
+    justify-self: center;
+    grid-column: 1;
+    grid-row: 3/4;
+    width: 25rem;
+  }
+  .sell-links {
+    grid-row: 4/5;
+    justify-content: center;
+    gap: 5rem;
   }
 }
 
@@ -572,26 +814,6 @@ body {
 }
 .artists .artists-info .artist-profile h1 {
   margin-bottom: 0.5rem;
-  font-size: 0.875rem;
-  font-weight: 300;
-  font-family: "Inter", sans-serif;
-}
-@media (max-width: 1200px) {
-  .artists .artists-info .artist-profile h1 {
-    font-size: 0.875rem;
-    font-weight: 300;
-  }
-}
-.artists .artists-info .artist-profile h2 {
-  font-size: 1rem;
-  font-weight: 400;
-  font-family: "Inter", sans-serif;
-}
-@media (max-width: 1200px) {
-  .artists .artists-info .artist-profile h2 {
-    font-size: 0.84375rem;
-    font-weight: 400;
-  }
 }
 
 .suscribe {
@@ -665,29 +887,22 @@ body {
 }
 .footer .social p {
   margin-bottom: 1rem;
-  font-size: 0.875rem;
-  font-weight: 300;
+  line-height: 1.5;
 }
 .footer .social-networks {
   display: flex;
   gap: 0.5rem;
 }
-.footer .footer-links {
+.footer-links {
   display: flex;
   flex-direction: column;
   justify-self: end;
   gap: 1rem;
 }
-.footer .footer-links .footer-title {
-  font-size: 1rem;
-  font-weight: 700;
-}
-.footer .footer-links .links {
+.footer-links .links {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  font-size: 0.875rem;
-  font-weight: 300;
 }
 .footer .regulations {
   grid-column: 1/-1;

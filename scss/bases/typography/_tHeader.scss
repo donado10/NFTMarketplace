@@ -1,0 +1,6 @@
+.header {
+  .link > * {
+    @include set-font($fs-regular, $fw-semi-regular);
+    color: $txt-fourthColor;
+  }
+}

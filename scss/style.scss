@@ -5,6 +5,14 @@
 // ---- BASE ----
 @import "bases/reset";
 @import "bases/global";
+@import "bases/typography/tGlobal";
+@import "bases/typography/tHeader";
+@import "bases/typography/tHero";
+@import "bases/typography/tMarket";
+@import "bases/typography/tSell";
+@import "bases/typography/tArtists";
+@import "bases/typography/tSuscribe";
+@import "bases/typography/tFooter";
 
 // ---- COMPONENTS ----
 @import "components/buttons";

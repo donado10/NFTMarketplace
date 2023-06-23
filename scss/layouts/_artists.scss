@@ -121,23 +121,6 @@
 
       h1 {
         margin-bottom: 0.5rem;
-        @include set-font($fs-semi-regular, $fw-semi-regular);
-        font-family: $ff-secondary;
-
-        @include response(xxl) {
-          $fs-regular: text-resize-giant-based(3.375rem, _regular);
-          @include set-font($fs-semi-regular, $fw-semi-regular);
-        }
-      }
-
-      h2 {
-        @include set-font($fs-regular, $fw-regular);
-        font-family: $ff-secondary;
-
-        @include response(xxl) {
-          $fs-regular: text-resize-giant-based(3.375rem, _regular);
-          @include set-font($fs-regular, $fw-regular);
-        }
       }
     }
   }

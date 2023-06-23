@@ -1,0 +1,12 @@
+.suscribe {
+  &-description {
+    @include set-font($fs-regular, $fw-semi-regular);
+    font-family: $ff-secondary;
+    color: $txt-defaultColor;
+
+    @include response(xxl) {
+      $fs-regular: text-resize-giant-based(3.375rem, _regular);
+      @include set-font($fs-regular, $fw-semi-regular);
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.footer {
+  .social {
+    p {
+      @include set-font($fs-semi-regular, $fw-semi-regular);
+      @include response(xxl) {
+        $fs-semi-regular: text-resize-giant-based(3.375rem, s_regular);
+        @include set-font($fs-semi-regular, $fw-semi-regular);
+      }
+    }
+  }
+
+  &-links {
+    .footer-title {
+      @include set-font($fs-regular, $fw-bold);
+
+      @include response(xxl) {
+        $fs-regular: text-resize-giant-based(3.375rem, _regular);
+        @include set-font($fs-regular, $fw-semi-regular);
+      }
+    }
+
+    .links {
+      @include set-font($fs-semi-regular, $fw-semi-regular);
+      @include response(xxl) {
+        $fs-semi-regular: text-resize-giant-based(3.375rem, s_regular);
+        @include set-font($fs-semi-regular, $fw-semi-regular);
+      }
+    }
+  }
+
+  .regulations {
+    @include response(xxl) {
+      $fs-semi-regular: text-resize-giant-based(3.375rem, s_regular);
+      @include set-font($fs-semi-regular, $fw-semi-regular);
+    }
+  }
+}

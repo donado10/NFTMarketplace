@@ -8,7 +8,6 @@
   margin-top: 3rem;
 
   &-images {
-    border: 1px solid red;
     grid-column: 2;
     grid-row: 1/-1;
     width: 85%;
@@ -49,15 +48,6 @@
   &-description {
     grid-column: 1;
     grid-row: 6/7;
-
-    @include set-font($fs-regular, $fw-semi-regular);
-    font-family: $ff-secondary;
-    color: $txt-defaultColor;
-
-    @include response(xxl) {
-      $fs-regular: text-resize-giant-based(3.375rem, _regular);
-      @include set-font($fs-regular, $fw-semi-regular);
-    }
   }
 
   &-links {
@@ -69,21 +59,36 @@
     button {
       width: 10rem;
       height: 2.5rem;
+    }
+  }
 
-      @include response(xxl) {
-        $fs-regular: text-resize-giant-based(3.375rem, _regular);
-        @include set-font($fs-regular, $fw-bold);
-      }
+  @include response(xl) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    &-title {
+      grid-row: 1/2;
+      @include remove-lineBreak;
+      @include center-element;
+      text-align: center;
     }
 
-    a {
-      color: $txt-defaultColor;
-      font-weight: $fw-bold;
+    &-description {
+      grid-row: 2/3;
+      @include center-element;
+      text-align: center;
+      width: 80%;
+    }
+    &-images {
+      @include center-element;
+      grid-column: 1;
+      grid-row: 3/4;
+      width: 25rem;
+    }
 
-      @include response(xxl) {
-        $fs-regular: text-resize-giant-based(3.375rem, _regular);
-        @include set-font($fs-regular, $fw-bold);
-      }
+    &-links {
+      grid-row: 4/5;
+      justify-content: center;
+      gap: 5rem;
     }
   }
 }

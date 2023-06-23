@@ -1,0 +1,87 @@
+.hero {
+  &-title {
+    @include set-font($fs-giant, $fw-bold);
+    font-family: $ff-primary;
+    color: $txt-defaultColor;
+
+    span {
+      color: $txt-highlightColor;
+    }
+
+    @include response(xxl) {
+      $fs-giant: text-resize-giant-based(3.375rem);
+      @include set-font($fs-giant, $fw-bold);
+    }
+  }
+
+  &-description {
+    @include set-font($fs-regular, $fw-semi-regular);
+    font-family: $ff-secondary;
+    color: $txt-defaultColor;
+
+    @include response(xxl) {
+      $fs-regular: text-resize-giant-based(3.375rem, _regular);
+      @include set-font($fs-regular, $fw-semi-regular);
+    }
+  }
+
+  &-links {
+    button {
+      @include response(xxl) {
+        $fs-regular: text-resize-giant-based(3.375rem, _regular);
+        @include set-font($fs-regular, $fw-bold);
+      }
+    }
+
+    a {
+      color: $txt-defaultColor;
+      font-weight: $fw-bold;
+
+      @include response(xxl) {
+        $fs-regular: text-resize-giant-based(3.375rem, _regular);
+        @include set-font($fs-regular, $fw-bold);
+      }
+    }
+  }
+
+  &-stats {
+    .stat {
+      h1 {
+        @include set-font($fs-enormous, $fw-bold);
+        font-family: $ff-primary;
+        span {
+          color: $txt-highlightColor;
+        }
+
+        @include response(xxl) {
+          $fs-enormous: text-resize-giant-based(3.375rem, _enormous);
+          @include set-font($fs-enormous, $fw-bold);
+        }
+      }
+
+      h2 {
+        @include set-font($fs-regular, $fw-semi-regular);
+
+        @include response(xxl) {
+          $fs-regular: text-resize-giant-based(3.375rem, _regular);
+          @include set-font($fs-regular, $fw-semi-regular);
+        }
+      }
+    }
+  }
+
+  &-image {
+    .hero-bid {
+      .time-left {
+        h1 {
+          color: $txt-highlightColor;
+        }
+      }
+      .current-bid {
+        h1 {
+          color: $txt-highlightColor;
+        }
+      }
+    }
+  }
+}

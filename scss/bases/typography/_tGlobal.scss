@@ -1,0 +1,20 @@
+body {
+  color: $color2;
+  font-family: $ff-secondary;
+}
+
+.section-title {
+  font-size: $fs-enormous;
+  font-weight: $fw-bold;
+  color: $txt-defaultColor;
+  font-family: $ff-primary;
+
+  span {
+    color: $txt-highlightColor;
+  }
+
+  @include response(xxl) {
+    $fs-enormous: text-resize-giant-based(3.375rem, _enormous);
+    @include set-font($fs-enormous, $fw-bold);
+  }
+}

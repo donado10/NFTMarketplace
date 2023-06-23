@@ -1,0 +1,31 @@
+.sell {
+  &-description {
+    @include set-font($fs-regular, $fw-semi-regular);
+    font-family: $ff-secondary;
+    color: $txt-defaultColor;
+
+    @include response(xxl) {
+      $fs-regular: text-resize-giant-based(3.375rem, _regular);
+      @include set-font($fs-regular, $fw-semi-regular);
+    }
+  }
+
+  &-links {
+    button {
+      @include response(xxl) {
+        $fs-regular: text-resize-giant-based(3.375rem, _regular);
+        @include set-font($fs-regular, $fw-bold);
+      }
+    }
+
+    a {
+      color: $txt-defaultColor;
+      font-weight: $fw-bold;
+
+      @include response(xxl) {
+        $fs-regular: text-resize-giant-based(3.375rem, _regular);
+        @include set-font($fs-regular, $fw-bold);
+      }
+    }
+  }
+}

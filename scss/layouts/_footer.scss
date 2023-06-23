@@ -9,7 +9,7 @@
 
     p {
       margin-bottom: 1rem;
-      @include set-font($fs-semi-regular, $fw-semi-regular);
+      line-height: 1.5;
     }
 
     &-networks {
@@ -18,21 +18,16 @@
     }
   }
 
-  .footer-links {
+  &-links {
     display: flex;
     flex-direction: column;
     justify-self: end;
     gap: 1rem;
 
-    .footer-title {
-      @include set-font($fs-regular, $fw-bold);
-    }
-
     .links {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
-      @include set-font($fs-semi-regular, $fw-semi-regular);
     }
   }
 

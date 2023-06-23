@@ -11,11 +11,6 @@
     display: flex;
     gap: 4rem;
 
-    .link > * {
-      @include set-font($fs-regular, $fw-semi-regular);
-      color: $txt-fourthColor;
-    }
-
     .link:hover > * {
       color: $txt-defaultColor;
     }

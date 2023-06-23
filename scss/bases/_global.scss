@@ -1,8 +1,6 @@
 body {
   @include flexcentered();
   flex-direction: column;
-  color: $color2;
-  font-family: $ff-secondary;
   position: relative;
   background: transparent;
 }
@@ -15,21 +13,6 @@ body {
   margin-top: $spacing-margin;
 }
 
-.section-title {
-  font-size: $fs-enormous;
-  font-weight: $fw-bold;
-  color: $txt-defaultColor;
-  font-family: $ff-primary;
-
-  span {
-    color: $txt-highlightColor;
-  }
-
-  @include response(xxl) {
-    $fs-enormous: text-resize-giant-based(3.375rem, _enormous);
-    @include set-font($fs-enormous, $fw-bold);
-  }
-}
 .page-background {
   position: absolute;
   width: 100%;
@@ -47,4 +30,44 @@ body {
     width: 100%;
     height: 100%;
   }
+}
+
+.size-50 {
+  font-size: $fs-semi-regular;
+}
+
+.size-100 {
+  font-size: $fs-regular;
+}
+
+.size-150 {
+  font-size: $fs-semi-large;
+}
+
+.size-200 {
+  font-size: $fs-large;
+}
+
+.size-400 {
+  font-size: $fs-enormous;
+}
+
+.size-500 {
+  font-size: $fs-giant;
+}
+
+.bold-50 {
+  font-weight: $fw-semi-regular;
+}
+
+.bold-100 {
+  font-weight: $fw-regular;
+}
+
+.bold-150 {
+  font-weight: $fw-semi-bold;
+}
+
+.bold-200 {
+  font-weight: $fw-bold;
 }
