@@ -91,4 +91,18 @@
       gap: 5rem;
     }
   }
+
+  @include response(md) {
+    &-images {
+      width: 95%;
+    }
+
+    &-links {
+      button {
+        width: 8rem;
+        height: 2.5rem;
+      }
+      gap: 1.5rem;
+    }
+  }
 }

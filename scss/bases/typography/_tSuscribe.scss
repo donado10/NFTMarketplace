@@ -4,8 +4,8 @@
     font-family: $ff-secondary;
     color: $txt-defaultColor;
 
-    @include response(xxl) {
-      $fs-regular: text-resize-giant-based(3.375rem, _regular);
+    @include response(lg) {
+      $fs-regular: 0.675rem;
       @include set-font($fs-regular, $fw-semi-regular);
     }
   }

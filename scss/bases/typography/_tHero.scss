@@ -12,6 +12,16 @@
       $fs-giant: text-resize-giant-based(3.375rem);
       @include set-font($fs-giant, $fw-bold);
     }
+
+    @include response(lg) {
+      $fs-giant: text-resize-giant-based(2.375rem);
+      @include set-font($fs-giant, $fw-bold);
+    }
+
+    @include response(md) {
+      $fs-giant: text-resize-giant-based(2rem);
+      @include set-font($fs-giant, $fw-bold);
+    }
   }
 
   &-description {
@@ -23,12 +33,21 @@
       $fs-regular: text-resize-giant-based(3.375rem, _regular);
       @include set-font($fs-regular, $fw-semi-regular);
     }
+    @include response(lg) {
+      $fs-regular: 0.675rem;
+      @include set-font($fs-regular, $fw-semi-regular);
+    }
   }
 
   &-links {
     button {
       @include response(xxl) {
-        $fs-regular: text-resize-giant-based(3.375rem, _regular);
+        $fs-regular: 0.875rem;
+        @include set-font($fs-regular, $fw-bold);
+      }
+
+      @include response(md) {
+        $fs-regular: 0.775rem;
         @include set-font($fs-regular, $fw-bold);
       }
     }
@@ -38,7 +57,11 @@
       font-weight: $fw-bold;
 
       @include response(xxl) {
-        $fs-regular: text-resize-giant-based(3.375rem, _regular);
+        $fs-regular: 0.875rem;
+        @include set-font($fs-regular, $fw-bold);
+      }
+      @include response(md) {
+        $fs-regular: 0.775rem;
         @include set-font($fs-regular, $fw-bold);
       }
     }
@@ -57,6 +80,11 @@
           $fs-enormous: text-resize-giant-based(3.375rem, _enormous);
           @include set-font($fs-enormous, $fw-bold);
         }
+
+        @include response(lg) {
+          $fs-enormous: text-resize-giant-based(2.375rem, _enormous);
+          @include set-font($fs-enormous, $fw-bold);
+        }
       }
 
       h2 {
@@ -64,6 +92,11 @@
 
         @include response(xxl) {
           $fs-regular: text-resize-giant-based(3.375rem, _regular);
+          @include set-font($fs-regular, $fw-semi-regular);
+        }
+
+        @include response(lg) {
+          $fs-regular: 0.675rem;
           @include set-font($fs-regular, $fw-semi-regular);
         }
       }

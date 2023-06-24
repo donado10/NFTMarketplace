@@ -8,12 +8,24 @@
       $fs-regular: text-resize-giant-based(3.375rem, _regular);
       @include set-font($fs-regular, $fw-semi-regular);
     }
+    @include response(lg) {
+      $fs-regular: 0.675rem;
+      @include set-font($fs-regular, $fw-semi-regular);
+    }
   }
 
   &-links {
     button {
       @include response(xxl) {
-        $fs-regular: text-resize-giant-based(3.375rem, _regular);
+        $fs-regular: 0.875rem;
+        @include set-font($fs-regular, $fw-bold);
+      }
+      @include response(lg) {
+        $fs-regular: 0.875rem;
+        @include set-font($fs-regular, $fw-bold);
+      }
+      @include response(md) {
+        $fs-regular: 0.675rem;
         @include set-font($fs-regular, $fw-bold);
       }
     }
@@ -23,7 +35,16 @@
       font-weight: $fw-bold;
 
       @include response(xxl) {
-        $fs-regular: text-resize-giant-based(3.375rem, _regular);
+        $fs-regular: 0.875rem;
+        @include set-font($fs-regular, $fw-bold);
+      }
+
+      @include response(lg) {
+        $fs-regular: 0.875rem;
+        @include set-font($fs-regular, $fw-bold);
+      }
+      @include response(md) {
+        $fs-regular: 0.675rem;
         @include set-font($fs-regular, $fw-bold);
       }
     }

@@ -1,10 +1,13 @@
 .header {
   display: grid;
   grid-template-columns: repeat(10, auto);
-
   nav {
     grid-column: 1/6;
     align-self: center;
+  }
+
+  .close-menu {
+    display: none;
   }
 
   &-links {
@@ -14,6 +17,10 @@
     .link:hover > * {
       color: $txt-defaultColor;
     }
+
+    @include response(lg) {
+      gap: 3rem;
+    }
   }
 
   &-btn {
@@ -21,5 +28,70 @@
     grid-column: -1;
     width: 8rem;
     height: 2.5rem;
+  }
+
+  &-menu {
+    display: none;
+  }
+
+  @include response(lg) {
+    nav {
+      position: fixed;
+      z-index: 2;
+      @include flexcentered;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: $bg-nav;
+      transition: top 0.5s ease-in;
+    }
+
+    .open-nav {
+      top: -100%;
+    }
+
+    .close-menu {
+      display: block;
+      width: 100%;
+      img {
+        width: 2.75rem;
+        aspect-ratio: 1/1;
+      }
+      border-top: 1px solid $color1;
+      @include flexcentered;
+      padding: 3rem;
+    }
+    &-links {
+      flex-direction: column;
+      width: 100%;
+      gap: 0rem;
+
+      .link {
+        border-top: 1px solid $color1;
+        padding: 3rem;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    &-btn {
+      grid-column: 1;
+      width: 7rem;
+    }
+
+    &-menu {
+      display: block;
+      height: min-content;
+      grid-column: -1;
+      width: 1.75rem;
+      height: min-content;
+      img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        fill: red;
+      }
+      @include center-element();
+    }
   }
 }

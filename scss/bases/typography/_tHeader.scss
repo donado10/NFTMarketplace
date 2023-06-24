@@ -2,5 +2,10 @@
   .link > * {
     @include set-font($fs-regular, $fw-semi-regular);
     color: $txt-fourthColor;
+
+    @include response(lg) {
+      $fs-regular: 0.875rem;
+      @include set-font($fs-regular, $fw-semi-regular);
+    }
   }
 }

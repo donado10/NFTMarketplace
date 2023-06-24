@@ -17,4 +17,9 @@ body {
     $fs-enormous: text-resize-giant-based(3.375rem, _enormous);
     @include set-font($fs-enormous, $fw-bold);
   }
+
+  @include response(lg) {
+    $fs-enormous: 1.7rem;
+    @include set-font($fs-enormous, $fw-bold);
+  }
 }

@@ -4,6 +4,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, auto);
   row-gap: 3rem;
+  width: 100%;
 
   &-title {
     grid-column: 1;
@@ -32,6 +33,7 @@
     grid-row: 4/5;
 
     display: flex;
+    flex-wrap: wrap;
     gap: 3rem;
     .stat {
       padding: 0rem 1.2rem;
@@ -141,6 +143,41 @@
     &-stats {
       grid-row: 5/6;
       @include center-element;
+    }
+  }
+
+  @include response(lg) {
+    &-image {
+      @include flexcentered();
+      flex-direction: column;
+      gap: 2rem;
+      .hero-bid {
+        position: static;
+        @include center-element();
+      }
+    }
+  }
+
+  @include response(md) {
+    .round {
+      width: 5rem;
+      aspect-ratio: 1/1;
+      top: 40%;
+      left: -7%;
+    }
+    &-image {
+      width: 95%;
+      .hero-bid {
+        display: none;
+      }
+    }
+
+    &-links {
+      gap: 1.5rem;
+      button {
+        width: 8rem;
+        height: 2.5rem;
+      }
     }
   }
 }

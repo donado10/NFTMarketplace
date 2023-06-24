@@ -26,7 +26,6 @@
     gap: 0.5rem;
     width: 100%;
     aspect-ratio: 2.1/1;
-    border: 1px solid red;
 
     .artist {
       height: 100%;
@@ -121,6 +120,55 @@
 
       h1 {
         margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  @include response(lg) {
+    .artists-info {
+      grid-template-columns: repeat(16, 1fr);
+      grid-template-rows: auto;
+      aspect-ratio: 1.5/1;
+      .artist[data-index="3"] {
+        display: none;
+      }
+    }
+    &-btn {
+      width: 6.5rem;
+      height: 2rem;
+    }
+
+    &-title {
+      @include remove-lineBreak();
+    }
+  }
+
+  @include response(md) {
+    grid-template-rows: repeat(3, auto);
+
+    &-title {
+      grid-column: 1/-1;
+      grid-row: 1;
+      text-align: center;
+    }
+    &-btn {
+      grid-column: 1/-1;
+      grid-row: 2;
+      @include center-element;
+    }
+
+    .artists-info {
+      grid-column: 1/-1;
+      grid-row: 3;
+    }
+
+    .artist-profile {
+      gap: 1rem;
+      .picture {
+        img {
+          width: 70%;
+          aspect-ratio: 1/1;
+        }
       }
     }
   }

@@ -1,6 +1,5 @@
 body {
   @include flexcentered();
-  flex-direction: column;
   position: relative;
   background: transparent;
 }

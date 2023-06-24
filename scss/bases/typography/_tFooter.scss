@@ -6,6 +6,10 @@
         $fs-semi-regular: text-resize-giant-based(3.375rem, s_regular);
         @include set-font($fs-semi-regular, $fw-semi-regular);
       }
+      @include response(lg) {
+        $fs-semi-regular: 1rem;
+        @include set-font($fs-semi-regular, $fw-semi-regular);
+      }
     }
   }
 
@@ -15,7 +19,11 @@
 
       @include response(xxl) {
         $fs-regular: text-resize-giant-based(3.375rem, _regular);
-        @include set-font($fs-regular, $fw-semi-regular);
+        @include set-font($fs-regular, $fw-bold);
+      }
+      @include response(lg) {
+        $fs-semi-regular: 1rem;
+        @include set-font($fs-semi-regular, $fw-bold);
       }
     }
 
@@ -25,12 +33,21 @@
         $fs-semi-regular: text-resize-giant-based(3.375rem, s_regular);
         @include set-font($fs-semi-regular, $fw-semi-regular);
       }
+      @include response(lg) {
+        $fs-semi-regular: 0.875rem;
+        @include set-font($fs-semi-regular, $fw-semi-regular);
+      }
     }
   }
 
   .regulations {
     @include response(xxl) {
       $fs-semi-regular: text-resize-giant-based(3.375rem, s_regular);
+      @include set-font($fs-semi-regular, $fw-semi-regular);
+    }
+
+    @include response(md) {
+      $fs-semi-regular: 0.5rem;
       @include set-font($fs-semi-regular, $fw-semi-regular);
     }
   }

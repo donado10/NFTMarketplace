@@ -47,7 +47,7 @@
       }
 
       .nft-name {
-        margin-left: 20px;
+        margin-left: 1.25rem;
         align-self: center;
       }
 
@@ -56,7 +56,7 @@
         gap: 0.5rem;
         align-items: center;
         justify-self: end;
-        margin-right: 20px;
+        margin-right: 1.25rem;
       }
 
       .time-left {
@@ -66,7 +66,8 @@
           align-items: center;
           gap: 0.5rem;
         }
-        margin-left: 20px;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
         align-self: center;
       }
 
@@ -78,12 +79,54 @@
     }
   }
   @include response(xl) {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: auto auto;
+    &-btn {
+      width: 6.5rem;
+      height: 2rem;
+    }
 
     &-cards {
       @include center-element;
       justify-content: center;
       align-items: center;
+    }
+  }
+
+  @include response(md) {
+    grid-template-rows: repeat(3, auto);
+    &-title {
+      grid-column: 1/-1;
+      grid-row: 1;
+      text-align: center;
+    }
+    &-btn {
+      grid-column: 1/-1;
+      grid-row: 2;
+      @include center-element;
+    }
+    &-cards {
+      grid-row: 3;
+      .card {
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        .time-left {
+          .timer {
+            margin-top: 0;
+          }
+          grid-column: 1/-1;
+          grid-row: 3/4;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .place-bid {
+          grid-column: 1/-1;
+          grid-row: 4/5;
+          @include center-element;
+        }
+      }
     }
   }
 }
