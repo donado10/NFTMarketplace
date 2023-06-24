@@ -1330,6 +1330,12 @@ body {
   flex-direction: column;
   gap: 0.5rem;
 }
+.footer-links h2 {
+  cursor: pointer;
+}
+.footer-links h2:hover {
+  color: hsl(67, 89%, 50%);
+}
 .footer .regulations {
   grid-column: 1/-1;
   grid-row: 2/3;
