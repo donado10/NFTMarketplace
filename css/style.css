@@ -449,6 +449,18 @@ body {
   }
 }
 
+.primary-btn,
+.place-bid {
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  color: hsl(67, 89%, 50%);
+  border: 1px solid hsl(67, 89%, 50%);
+  border-radius: 8px;
+  background: hsl(223, 51%, 15%);
+}
+
 .place-bid {
   color: hsl(67, 89%, 50%);
   border: 1px solid hsl(67, 89%, 50%);
@@ -465,6 +477,7 @@ body {
 }
 .header .close-menu {
   display: none;
+  cursor: pointer;
 }
 .header-links {
   display: flex;
@@ -519,6 +532,7 @@ body {
 }
 .header-menu {
   display: none;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .header nav {
@@ -577,7 +591,11 @@ body {
   .header-menu img {
     width: 100%;
     aspect-ratio: 1/1;
-    fill: red;
+  }
+  .header .sticky {
+    position: fixed;
+    right: 10%;
+    z-index: 4;
   }
 }
 

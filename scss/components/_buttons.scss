@@ -11,6 +11,15 @@
   }
 }
 
+.primary-btn,
+.place-bid {
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  @include place-bid;
+}
+
 .place-bid {
   color: $btn-bid-txtColor;
   border: 1px solid $color1;

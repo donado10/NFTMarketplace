@@ -56,6 +56,13 @@
   }
 }
 
+@mixin place-bid {
+  color: $btn-bid-txtColor;
+  border: 1px solid $color1;
+  border-radius: $border-radius1;
+  background: $color5;
+}
+
 @function max($number1, $number2) {
   @return if($number1 > $number2, $number1, $number2);
 }

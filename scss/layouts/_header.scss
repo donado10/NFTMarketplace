@@ -8,6 +8,7 @@
 
   .close-menu {
     display: none;
+    cursor: pointer;
   }
 
   &-links {
@@ -71,6 +72,7 @@
 
   &-menu {
     display: none;
+    cursor: pointer;
   }
 
   @include response(lg) {
@@ -128,9 +130,14 @@
       img {
         width: 100%;
         aspect-ratio: 1/1;
-        fill: red;
       }
       @include center-element();
+    }
+
+    .sticky {
+      position: fixed;
+      right: 10%;
+      z-index: 4;
     }
   }
 }
