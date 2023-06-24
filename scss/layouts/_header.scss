@@ -114,6 +114,13 @@
         width: 100%;
         text-align: center;
       }
+
+      .link-hover-transition::before {
+        display: none;
+      }
+      .link-hover-transition::after {
+        display: none;
+      }
     }
 
     &-btn {

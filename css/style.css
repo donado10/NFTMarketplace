@@ -575,6 +575,12 @@ body {
     width: 100%;
     text-align: center;
   }
+  .header-links .link-hover-transition::before {
+    display: none;
+  }
+  .header-links .link-hover-transition::after {
+    display: none;
+  }
   .header-btn {
     grid-column: 1;
     width: 7rem;
