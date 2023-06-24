@@ -66,6 +66,18 @@
       aspect-ratio: 1/1;
       top: 40%;
       left: -12%;
+      animation: rotation 10s infinite linear;
+      animation-delay: 0s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes rotation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(-360deg);
+      }
     }
     .hero-bid {
       display: grid;

@@ -470,8 +470,41 @@ body {
   display: flex;
   gap: 4rem;
 }
-.header-links .link:hover > * {
+.header-links .link-hover-transition:hover > * {
   color: hsl(74, 100%, 100%);
+}
+.header-links .link-hover-transition {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.header-links .link-hover-transition::before {
+  content: "";
+  position: absolute;
+  top: -35.7%;
+  left: 50%;
+  width: 0%;
+  height: 175%;
+  border-bottom: 3px solid hsl(67, 89%, 50%);
+  z-index: -1;
+  transition: width 0.3s ease-in;
+}
+.header-links .link-hover-transition::after {
+  content: "";
+  position: absolute;
+  top: -35.7%;
+  right: 50%;
+  width: 0%;
+  height: 175%;
+  border-bottom: 3px solid hsl(67, 89%, 50%);
+  z-index: -1;
+  transition: width 0.3s ease-in;
+}
+.header-links .link-hover-transition:hover::before {
+  width: 50%;
+}
+.header-links .link-hover-transition:hover::after {
+  width: 50%;
 }
 @media (max-width: 768px) {
   .header-links {
@@ -611,6 +644,17 @@ body {
   aspect-ratio: 1/1;
   top: 40%;
   left: -12%;
+  animation: rotation 10s infinite linear;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 .hero-image .hero-bid {
   display: grid;

@@ -14,8 +14,47 @@
     display: flex;
     gap: 4rem;
 
-    .link:hover > * {
+    .link-hover-transition:hover > * {
       color: $txt-defaultColor;
+    }
+
+    .link-hover-transition {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .link-hover-transition::before {
+      content: "";
+      position: absolute;
+      top: -35.7%;
+      left: 50%;
+      width: 0%;
+      height: 175%;
+      border-bottom: 3px solid $color1;
+      z-index: -1;
+
+      transition: width 0.3s ease-in;
+    }
+
+    .link-hover-transition::after {
+      content: "";
+      position: absolute;
+      top: -35.7%;
+      right: 50%;
+      width: 0%;
+      height: 175%;
+      border-bottom: 3px solid $color1;
+      z-index: -1;
+      transition: width 0.3s ease-in;
+    }
+
+    .link-hover-transition:hover::before {
+      width: 50%;
+    }
+
+    .link-hover-transition:hover::after {
+      width: 50%;
     }
 
     @include response(lg) {
