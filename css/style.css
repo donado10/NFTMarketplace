@@ -796,7 +796,7 @@ body {
     width: 95%;
   }
   .hero-image .hero-bid {
-    display: none;
+    width: 15rem;
   }
   .hero-links {
     gap: 1.5rem;
